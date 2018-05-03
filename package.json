@@ -1,0 +1,23 @@
+{
+  "name": "kopiguide",
+  "version": "1.0.0",
+  "description": "A forked version of Chee Aun's Kopi.Guide",
+  "main": "app.js",
+  "scripts": {
+    "backstopp": "node node_modules/backstopjs/cli/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenzoarima/kopi.guide.git"
+  },
+  "author": "Kenzoarima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenzoarima/kopi.guide/issues"
+  },
+  "homepage": "https://github.com/kenzoarima/kopi.guide#readme",
+  "devDependencies": {
+    "backstopjs": "^3.2.15"
+  }
+}
