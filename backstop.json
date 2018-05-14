@@ -1,5 +1,5 @@
 {
-  "id": "kopiguide_test",
+  "id": "kopiguide",
   "viewports": [
     {
       "label": "phone",
@@ -21,18 +21,38 @@
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
     {
-      "label": "KopiGuide Homepage",
-      "url": "/dist/index.html",
-      "referenceUrl": "",
-      "readyEvent": "",
-      "readySelector": "",
+      "label": "default",
+      "url": "/dist/index.html", "referenceUrl": "",
+      "readyEvent": "", "readySelector": "",
       "delay": 0,
-      "hideSelectors": [],
-      "removeSelectors": [],
-      "hoverSelector": "",
-      "clickSelector": "",
+      "hideSelectors": [], "removeSelectors": [],
+      "hoverSelector": "", "clickSelector": "",
       "postInteractionWait": 0,
       "selectors": [],
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "select_kopi-cdilogahdai",
+      "url": "/dist/index.html", "referenceUrl": "",
+      "readyEvent": "", "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [
+        ".lukewarm .cup:after",
+        ".warm .cup:after",
+        ".kopi-lukewarm .cup:after",
+        ".kopi-warm .cup:after"
+      ],
+      "removeSelectors": [
+        ".lukewarm .cup:after",
+        ".warm .cup:after",
+        ".kopi-lukewarm .cup:after",
+        ".kopi-warm .cup:after"
+      ],
+      "hoverSelector": "", "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": ["#maker-container"],
       "selectorExpansion": true,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
